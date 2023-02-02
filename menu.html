@@ -8,7 +8,7 @@
     <script src="script.js"></script>
     <title>Elevated Eats</title>
 </head>
-<body>
+<body id="testing">
 
 <!-- OVERLAY MENU -->
 
@@ -19,6 +19,7 @@
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
+    <img alt="logo" src="img/ElevatedEats.png">
     <a href="index.html">HEM</a>
     <a href="menu.html">VÅR MENY</a>
     <a href="boka.html">BOKA BORD</a>
@@ -26,13 +27,13 @@
     <a href="hittahit.html">HITTA HIT</a>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<span class="openNav" onclick="openNav()">&#9776;</span>
 
 <!-- OVERLAY MENU END -->
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
 
-<h1>VÅR MENY</h1>
+<h1 class="pageheader">VÅR MENY</h1>
 
 <div class="menu-container">
     <div>
@@ -48,86 +49,159 @@
          Hamburgare med tomat, sallad, saltgurka
       </small></h2>
     </div>
-  
+
     <div>
-      <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank">
+      <a href="#" target="_blank">
       <img alt="Matbild" src="img/pasta.png"> </a>
-      <h2>Maträtt<br>
-      <small>"Nothing less than magical!" – Joe Morgenstern
-      <br>
-      8.6 / 10 IMDB
-      </small></h2>
-    </div>
-  
-    <div>
-      <a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank">
-      <img alt="Matbild" src="img/chorizo-mozarella.png"> </a>
-      <h2>Maträtt<br>
-      <small>"A beautifully animated, kindhearted gem" – Leonard Maltin
-      <br>
-      7.8 / 10 IMDB
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Smarrig pasta
+        <br> <small> 
+        0kr
+        <br>
+         Pasta med läcker sås
       </small></h2>
     </div>
 
     <div>
-        <a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank">
-        <img alt="Matbild" src="img/hamburger.png"> </a>
-        <h2>Maträtt<br>
-        <small> pris
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pizza.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
         <br>
-        beskrivning
-        </small></h2>
-      </div>
-    
-      <div>
-        <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank">
-        <img alt="Matbild" src="img/pasta.png"> </a>
-        <h2>Maträtt<br>
-        <small>"Nothing less than magical!" – Joe Morgenstern
+        Cirkulär pizza
+        <br> <small> 
+        0kr
         <br>
-        8.6 / 10 IMDB
-        </small></h2>
-      </div>
-    
-      <div>
-        <a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank">
-        <img alt="Matbild" src="img/chorizo-mozarella.png"> </a>
-        <h2>Maträtt<br>
-        <small>"A beautifully animated, kindhearted gem" – Leonard Maltin
-        <br>
-        7.8 / 10 IMDB
-        </small></h2>
-      </div>
-         
+         Pizza med mozarella
+      </small></h2>
+    </div>
     <div>
-        <a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank">
-        <img alt="Matbild" src="img/hamburger.png"> </a>
-        <h2>Maträtt<br>
-        <small> pris
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/hamburger.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
         <br>
-        beskrivning
-        </small></h2>
-      </div>
-    
-      <div>
-        <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank">
-        <img alt="Matbild" src="img/pasta.png"> </a>
-        <h2>Maträtt<br>
-        <small>"Nothing less than magical!" – Joe Morgenstern
+        Saftig Hamburgare
+        <br> <small> 
+        0kr
         <br>
-        8.6 / 10 IMDB
-        </small></h2>
-      </div>
-    
-      <div>
-        <a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank">
-        <img alt="Matbild" src="img/chorizo-mozarella.png"> </a>
-        <h2>Maträtt<br>
-        <small>"A beautifully animated, kindhearted gem" – Leonard Maltin
+         Hamburgare med tomat, sallad, saltgurka
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pasta.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
         <br>
-        7.8 / 10 IMDB
-        </small></h2>
-      </div>
+        Smarrig pasta
+        <br> <small> 
+        0kr
+        <br>
+         Pasta med läcker sås
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pizza.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Pizza Margherita
+        <br> <small> 
+        0kr
+        <br>
+         Pizza med mozarella
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/hamburger.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Saftig Hamburgare
+        <br> <small> 
+        0kr
+        <br>
+         Hamburgare med tomat, sallad, saltgurka
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pasta.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Smarrig pasta
+        <br> <small> 
+        0kr
+        <br>
+         Pasta med läcker sås
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pizza.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Pizza Margherita
+        <br> <small> 
+        0kr
+        <br>
+         Pizza med mozarella
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/hamburger.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Saftig Hamburgare
+        <br> <small> 
+        0kr
+        <br>
+         Hamburgare med tomat, sallad, saltgurka
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pasta.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Smarrig pasta
+        <br> <small> 
+        0kr
+        <br>
+         Pasta med läcker sås
+      </small></h2>
+    </div>
+
+    <div>
+      <a href="#" target="_blank">
+      <img alt="Matbild" src="img/pizza.png"> </a>
+      <h2>
+        <span class="material-symbols-outlined"> expand_less </span>
+        <br>
+        Pizza Margherita
+        <br> <small> 
+        0kr
+        <br>
+         Pizza med mozarella
+      </small></h2>
+    </div>
   </div>
     
 <!-- FOOTER START -->

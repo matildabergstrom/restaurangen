@@ -1,0 +1,250 @@
+html, body {
+    margin: 0;
+    padding: 0;
+        background-color:#d9ad86;
+  }
+
+/* OVERLAY MENU */
+
+.overlay img{
+  width: 220px;
+}
+
+.openNav{
+  font-size: 60px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -10px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #610d0d;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #e8edff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #015896;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  /* OVERLAY MENU END*/
+
+    /* MENYN */
+
+  .menu-container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    margin: 10%;
+  }
+  
+  .menu-container div {
+    position: relative;
+    box-shadow: 0 4px 8px 0 #2b000069 , 0 6px 20px 0 #2b000069;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .menu-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .menu-container h2 {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 120%; /*Hög line height så att extra texten inte syns om texten inte har nog height*/
+    bottom: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'Blinker', sans-serif;
+    font-size: 1em;
+    -webkit-transition:0.3s;
+    background-color: #820000c4;
+    height: 50px;
+    font-weight: 300;
+  }
+  
+  
+  .menu-container h2:hover{
+    height: 60%; /*Ökar höjden på text rutan så att resten av h2 syns*/
+    -webkit-transition:0.3s;
+    background-color: #4E6C50;
+  }
+  
+  .pageheader{
+    text-align:center;
+    font-size: 3em;
+    padding-top: 1vw;
+    color: #820000c4;
+    animation:
+    typing 3.5s;
+    margin: 0 auto;
+    overflow: hidden; /* Ser till att texten inte visas tills animationen spelas */
+    white-space: nowrap; /* Håller texten på en rad */
+    margin: auto; /* Håller texten centrerad under animationen */
+    border: 1black;
+  }
+
+  @keyframes typing {
+    from { width: 0 } /* Gör textboxen bredare, och visar på så sätt mer och mer text (eftersom overflow är hidden)*/
+    to { width: 100% }
+  }
+  
+  @keyframes typingmobile {
+    from { width: 0 } /* Gör textboxen bredare, och visar på så sätt mer och mer text (eftersom overflow är hidden)*/
+    to { width: 100% }
+  }
+
+  footer {
+    background-color: #820000c4;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: -10px;
+    width: 100%;
+    z-index: 10;
+    color: #99bec1;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+  }
+
+   .menu-container h2:hover ~ .material-symbols-outlined{
+    color: green;
+    
+  }
+
+  /* STYLES FÖR DATOR */
+@media all and (min-width: 1100px) {
+
+.menu-container{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  margin: 10%;
+}
+
+.menu-container h2:hover{
+  height: 40%; 
+}
+}
+
+
+
+
+  /* Boka - Design för text och bilder*/
+
+  
+
+/* Boka - Design för text och bilder*/
+/* Media quiery ska sätta här på para*/
+.para{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card {
+  max-width: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 1%;
+  overflow: hidden;
+ }
+ 
+ 
+ .card p {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+ }
+
+.card img{
+  width: 120%
+  
+}
+ 
+ 
+ 
+ .link {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(123, 52, 52, 0.762);
+  width: 120px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+ }
+ 
+ .container{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+ 
+ 
+ 
+ 
+ 
