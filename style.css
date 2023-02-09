@@ -313,3 +313,10 @@ html, body {
 .omossh3 img{
   width: 40%;
 }
+
+.container3{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
