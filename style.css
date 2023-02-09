@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -50,7 +55,7 @@ html, body {
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #015896;
+    color: #4E6C50;
   }
   
   .overlay .closebtn {
@@ -150,7 +155,7 @@ html, body {
     margin-bottom: -10px;
     width: 100%;
     z-index: 10;
-    color: #99bec1;
+    color: #ffffff;
     text-align: center;
     font-family: 'Barlow', sans-serif;
   }
@@ -193,7 +198,7 @@ html, body {
 
 .card {
   max-width: 400px;
-  background-color: #f5f5f5;
+  background-color: #fbe9da;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -243,8 +248,68 @@ html, body {
   flex-direction: column;
 }
  
+ .start img{
+  width: 50%;
+  margin: 20vh;
+ }
  
+ .start{
+  justify-content: center;
+  display: flex;
+  background-image: url('https://anestisxasapotaverna.gr/wp-content/uploads/2021/12/ARTICLE-1.jpg');
+  height: 100%;
+ }
  
+ .info{
+  background-image: url('https://dms-cf-10.dimu.org/image/012uP1bEbQxa?dimension=1200x1200');
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .info p{
+  padding-bottom: 60vh;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  margin-top: 3vh;
+ }
+ .info h2{
+  padding-top: 5vh;
+ }
+
+ .textbackground{
+  text-align: center;
+  font-size: 2.4em;
+ }
+ .infoimage{
+  width: 100%;
+ }
+
+ @media screen and (max-width: 600px) {
+ .start img{
+  width: 100%;
+  margin: 5vh;
+ }
+  }
  
- 
- 
+ .container2{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.omossh2{
+  display: flex;
+  font-size: 25px;
+}
+
+.omossh3{
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.omossh3 img{
+  width: 40%;
+}
